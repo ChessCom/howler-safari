@@ -2,45 +2,101 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Howler + Safari</title>
+    <style>
+      body {
+        padding: 20px;
+      }
+
+      table {
+        border-collapse: collapse
+      }
+
+      tr:not(:first-child) td {
+        border-top: 1px solid black;
+      }
+
+      td {
+        padding: 20px 15px;
+      }
+
+      .loaded {
+        color: limegreen;
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
-    <table style="border-spacing: 20px">
+    <table>
       <tr>
-        <td>all</td>
+        <td id="all">all</td>
         <td><button id="load-all">Load</button></td>
         <td><button id="play-all">Play</button></td>
         <td><button id="unload-all">Unload</button></td>
       </tr>
 
       <tr>
-        <td>mp3</td>
+        <td id="all-html5">all (html5)</td>
+        <td><button id="load-all-html5">Load</button></td>
+        <td><button id="play-all-html5">Play</button></td>
+        <td><button id="unload-all-html5">Unload</button></td>
+      </tr>
+
+      <tr>
+        <td id="mp3">mp3</td>
         <td><button id="load-mp3">Load</button></td>
         <td><button id="play-mp3">Play</button></td>
         <td><button id="unload-mp3">Unload</button></td>
       </tr>
 
       <tr>
-        <td>ogg</td>
+        <td id="mp3-html5">mp3 (html5)</td>
+        <td><button id="load-mp3-html5">Load</button></td>
+        <td><button id="play-mp3-html5">Play</button></td>
+        <td><button id="unload-mp3-html5">Unload</button></td>
+      </tr>
+
+      <tr>
+        <td id="ogg">ogg</td>
         <td><button id="load-ogg">Load</button></td>
         <td><button id="play-ogg">Play</button></td>
         <td><button id="unload-ogg">Unload</button></td>
       </tr>
 
       <tr>
-        <td>wav</td>
+        <td id="ogg-html5">ogg (html5)</td>
+        <td><button id="load-ogg-html5">Load</button></td>
+        <td><button id="play-ogg-html5">Play</button></td>
+        <td><button id="unload-ogg-html5">Unload</button></td>
+      </tr>
+
+      <tr>
+        <td id="wav">wav</td>
         <td><button id="load-wav">Load</button></td>
         <td><button id="play-wav">Play</button></td>
         <td><button id="unload-wav">Unload</button></td>
       </tr>
 
       <tr>
-        <td>webm</td>
+        <td id="wav-html5">wav (html5)</td>
+        <td><button id="load-wav-html5">Load</button></td>
+        <td><button id="play-wav-html5">Play</button></td>
+        <td><button id="unload-wav-html5">Unload</button></td>
+      </tr>
+
+      <tr>
+        <td id="webm">webm</td>
         <td><button id="load-webm">Load</button></td>
         <td><button id="play-webm">Play</button></td>
         <td><button id="unload-webm">Unload</button></td>
+      </tr>
+
+      <tr>
+        <td id="webm-html5">webm (html5)</td>
+        <td><button id="load-webm-html5">Load</button></td>
+        <td><button id="play-webm-html5">Play</button></td>
+        <td><button id="unload-webm-html5">Unload</button></td>
       </tr>
     </table>
     <script type="module" src="/src/main.ts"></script>
